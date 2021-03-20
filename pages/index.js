@@ -6,7 +6,16 @@ export default function Home() {
     <div>
       <Head>
         <title>{profile.name} - {profile.title}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={`https://via.placeholder.com/64/${profile.color}/FFFFFF?text=${profile.name.substring(0, 1)}`} />
+
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:creator" content="@ervandracom" key="twhandle" />
+        {/* <meta property="og:url" content={currentURL} key="ogurl" /> */}
+        <meta property="og:image" content={`https://via.placeholder.com/1200x628/${profile.color}/FFFFFF?text=Resume:+${profile.name}+-+${profile.title}`} key="ogimage" />
+        <meta property="og:site_name" content={`${profile.name} - ${profile.title}`} key="ogsitename" />
+        <meta property="og:title" content={`Resume: ${profile.name} - ${profile.title}`} key="ogtitle" />
+        <meta property="og:description" content={profile.about} key="ogdesc" />
+
       </Head>
       <div id="app-container" className="cv border-top border-bottom border-5 border-primary">
 
@@ -38,7 +47,7 @@ export default function Home() {
                         <h2 className="h5 text-uppercase fw-bold text-primary">About</h2>
                         <p>{profile.about}</p>
                       </div>
-                      <hr className="d-none d-md-block d-lg-block"/>
+                      <hr className="d-none d-md-block d-lg-block" />
                       <div className="widget py-1 py-md-3">
                         <h2 className="h5 text-uppercase fw-bold text-primary">Work Experiences</h2>
                         {profile.experiences.length > 0 && profile.experiences.map((exp, idx) => (
@@ -55,7 +64,7 @@ export default function Home() {
                           </div>
                         ))}
                       </div>
-                      <hr className="d-none d-md-block d-lg-block"/>
+                      <hr className="d-none d-md-block d-lg-block" />
                       <div className="widget py-1 py-md-3 mb-3">
                         <h2 className="h5 text-uppercase fw-bold text-primary">Education</h2>
                         {profile.education.length > 0 && profile.education.map((edu, idx) => (

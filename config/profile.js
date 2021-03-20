@@ -77,7 +77,8 @@ const profile = {
       year: "2008 - 2012"
     }
   ],
-  color: '#00ff00'
+  color: 'ae2b26',
+  cover: 'https://i.imgur.com/i4NZURh.jpg',
 }
 
 export default profile;
