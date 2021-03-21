@@ -7,15 +7,13 @@ export default function Home() {
       <Head>
         <title>{profile.name} - {profile.title}</title>
         <link rel="icon" href={`https://via.placeholder.com/64/${profile.color}/FFFFFF?text=${profile.name.substring(0, 1)}`} />
-
+        <meta name="author" content={profile.name} />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="@ervandracom" key="twhandle" />
-        {/* <meta property="og:url" content={currentURL} key="ogurl" /> */}
-        <meta property="og:image" content={`https://via.placeholder.com/1200x628/${profile.color}/FFFFFF?text=Resume:+${profile.name}+-+${profile.title}`} key="ogimage" />
+        <meta property="og:image" content={profile.cover !== '' ? profile.cover : `https://via.placeholder.com/1200x628/${profile.color}/FFFFFF?text=Resume:+${profile.name}+-+${profile.title}`} key="ogimage" />
         <meta property="og:site_name" content={`${profile.name} - ${profile.title}`} key="ogsitename" />
         <meta property="og:title" content={`Resume: ${profile.name} - ${profile.title}`} key="ogtitle" />
         <meta property="og:description" content={profile.about} key="ogdesc" />
-
       </Head>
       <div id="app-container" className="cv border-top border-bottom border-5 border-primary">
 
