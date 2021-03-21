@@ -1,11 +1,11 @@
 const profile = {
-  name: "Ervandra Halim",
-  title: "Senior Software Engineer",
-  email: "ervandra.halim@gmail.com",
-  phone: "+6287708770800",
+  name: "Nabilla Inggrid A",
+  title: "Powerpoint Designer",
+  email: "withniara@gmail.com",
+  phone: "+6281336726023",
   photo: "https://www.ervandra.com/wp-content/uploads/2020/12/ervan-round.png",
-  about: "I'm Ervandra Halim, a Software Engineer. Through my entire career, i realize that i love the most to conceptualize a website or web applications, write technical specifications and develop it with my team into a high-quality applications that are feasible, scalable, tesable and measurable that will also meet with the business requirements.",
-  professionalSkills: [
+  about: "I'm withniara, a Powerpoint Designer. I love to create a fun and attractive powerpoint with high quality design, that are easy to edit and according to the require theme."
+  : [
     "Front-End Development",
     "HTML & CSS (SASS)",
     "React.js - Next.js",
@@ -27,18 +27,18 @@ const profile = {
   ],
   website: "www.ervandra.dev",
   social: [
-    "https://linkedin.com/in/ervandra",
-    "https://facebook.com/vahnisme",
-    "https://github.com/ervandra",
-    "https://youtube.com/c/ervandra"
+    "https://linkedin.com/in/withniara",
+    "https://facebook.com/withniara",
+    "https://github.com/withniara",
+    "https://instagram.com/c/withniara"
   ],
   experiences: [
     {
-      title: "Lead Frontend Developer",
-      company: "CIAYO",
+      title: "Powerpoint Designer",
+      purpose: "Teacher",
       year: "Dec 2016 - Jul 2020",
       summary: [
-        "Write technical specifications, help my team to meet business requirements",
+        "Make the student interest ",
         "Create blueprint project, and scaling the apps",
         "Code review, upgrading version and optimizing features",
         "Recoding web apps to catch the latest technology updates",
